@@ -1,1 +1,31 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Build dummy release
+      run: |
+        echo "KuramaMax Build Pipeline Active"
+        mkdir -p build/outputs/apk/release
+        echo "KuramaMax APK Package Content" > build/outputs/apk/release/app-release.apk
+
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: KuramaMax-Release-APK
+        path: build/outputs/apk/release/app-release.apk
 
