@@ -1,0 +1,23 @@
+{
+  "app_metadata": {
+    "version": "2.132.1",
+    "target_package": "com.dts.freefiremax",
+    "app_link_status": "linked"
+  },
+  "game_integration": {
+    "auto_inject": true,
+    "packet_routing_bypass": true
+  },
+  "aim_and_sensitivity_tweaks": {
+    "light_crosshair": true,
+    "aim_lock_assist": true,
+    "smoothness_multiplier": 1.85,
+    "fov_adjustment": 90.0,
+    "recoil_reduction_percent": 35.0
+  },
+  "security_and_antiban": {
+    "antiban_hook_shield": true,
+    "signature_masking": true,
+    "encrypted_socket": true
+  }
+}
