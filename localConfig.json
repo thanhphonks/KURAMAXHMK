@@ -1,12 +1,14 @@
 {
   "app_metadata": {
-    "version": "2.132.1",
+    "version": "2.5.0",
     "target_package": "com.dts.freefiremax",
-    "app_link_status": "linked"
+    "status": "active",
+    "sync_endpoint": "https://raw.githubusercontent.com/thanhphonks/KURAMAHMK/main/localConfig.json"
   },
-  "game_integration": {
-    "auto_inject": true,
-    "packet_routing_bypass": true
+  "injection_profile": {
+    "auto_sync": true,
+    "packet_routing_bypass": true,
+    "target_directory": "/data/data/com.dts.freefiremax/files/usercontent/"
   },
   "aim_and_sensitivity_tweaks": {
     "light_crosshair": true,
@@ -15,7 +17,7 @@
     "fov_adjustment": 90.0,
     "recoil_reduction_percent": 35.0
   },
-  "security_and_antiban": {
+  "security_masking": {
     "antiban_hook_shield": true,
     "signature_masking": true,
     "encrypted_socket": true
